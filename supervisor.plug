@@ -1,0 +1,12 @@
+[Core]
+name = supervisor
+module = supervisor
+
+[Documentation]
+description = Bot Plugin to control supervisord
+
+[Python]
+version = 3
+
+[Errbot]
+
