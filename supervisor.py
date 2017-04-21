@@ -26,7 +26,9 @@ class Supervisor(BotPlugin):
 
         scmd = args[0]
         if scmd in ALLOWED_COMMANDS:
-            output = run_cmd('sudo supervisorctl {cmd}'.format(cmd=scmd))
+            additional_params = ' '.join(args[1:]) if len(args) > 1 else ''
+
+            output = run_cmd('sudo supervisorctl {cmd} {params}'.format(cmd=scmd, params=additional_params))
         return output
 
 
