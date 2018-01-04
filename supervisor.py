@@ -7,6 +7,8 @@ ALLOWED_COMMANDS = [
     'version',
     'avail',
     'maintail',
+    'restart',
+    'stop',
 ]
 
 
